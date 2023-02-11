@@ -3,7 +3,21 @@
 }
 
 .projects {
-    /* border: 1px solid aqua; */
-    /* height: 800px; */
     padding: 20px;
+}
+
+.projects p {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        outline: 1px solid red;
+    }
+
+    body {
+        width: 100vw;
+        background-color: aqua;
+    }
 }

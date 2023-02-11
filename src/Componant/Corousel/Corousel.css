@@ -4,3 +4,7 @@
 .w-100 {
     height: 570px;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../Componant/Card/Card';
+import Project_Card from '../../Componant/Card/Project_Card/Card';
 import Header from '../../Componant/Header/Header';
 
 const Projects = () => {
@@ -7,7 +7,7 @@ const Projects = () => {
     <div>
     <Header />
     <section className="projects">
-      <Card />
+      <Project_Card />
     </section>
     </div>
   )
