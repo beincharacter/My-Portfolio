@@ -19,7 +19,28 @@
             "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676145429/smeou1s0pljujalydstk.png",
             "tech": "HTML5, CSS3, JS",
             "type": "Individual",
-            "hosted_link": "https://blog-client-imd3.onrender.com/"
+            "hosted_link": "https://rock-paper-scissor-r2pn.onrender.com/"
+        },
+        {
+            "name": "Book Search App",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676149223/sxsebzp7weceygpseasv.png",
+            "tech": "HTML5, CSS3, JS",
+            "type": "Individual",
+            "hosted_link": "https://book-search-bqdv.onrender.com/"
+        },
+        {
+            "name": "QR Code",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676183813/bh0gqyuyimpjzpzwtkeg.png",
+            "tech": "Node Js",
+            "type": "Individual",
+            "hosted_link": "https://book-search-bqdv.onrender.com/"
+        },
+        {
+            "name": "QR Code",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676183813/bh0gqyuyimpjzpzwtkeg.png",
+            "tech": "Node Js",
+            "type": "Individual",
+            "hosted_link": "https://book-search-bqdv.onrender.com/"
         }
     ]
 }

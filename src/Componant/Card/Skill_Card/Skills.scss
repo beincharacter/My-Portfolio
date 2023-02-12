@@ -1,5 +1,13 @@
 .skills_container {
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // margin: 20px;
+    // margin-left: 250px;
+    background-color: rgb(45, 49, 45);
+    width: fit-content;
+    padding: 20px;
+    
 
     a {
         margin-right: 20px;
