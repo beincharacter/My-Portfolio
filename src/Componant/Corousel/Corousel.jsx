@@ -6,7 +6,10 @@ const Corousel = () => {
     <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="https://avatars.mds.yandex.net/i?id=73fd45bbecf1dbfd5b06b3e85925878e-6343405-images-thumbs&n=13&exp=1" className="d-block w-100" alt=" " />
+              <img src="http://res.cloudinary.com/doh91aq3h/image/upload/v1676108355/mzvkrladnvihyxvb2ghb.png" className="d-block w-100" alt=" " />
+            </div>
+            <div className="carousel-item">
+              <img src="http://res.cloudinary.com/doh91aq3h/image/upload/v1676107842/mihpqpytlbrej9iapsgj.png" className="d-block w-100" alt=" " />
             </div>
             <div className="carousel-item">
               <img src="https://avatars.mds.yandex.net/i?id=73fd45bbecf1dbfd5b06b3e85925878e-6343405-images-thumbs&n=13&exp=1" className="d-block w-100" alt=" " />

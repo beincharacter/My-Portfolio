@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "name": "Laundry Cart",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png",
+            "tech": "MERN Stack",
+            "type": "Group",
+            "hosted_link": "https://blog-client-imd3.onrender.com/"
+        },
+        {
+            "name": "Bloging App",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941668/d4fxlmdv6xzwl4yfbi1g.png",
+            "tech": "MERN Stack",
+            "type": "Individual",
+            "hosted_link": "https://blog-client-imd3.onrender.com/"
+        },
+        {
+            "name": "Rock Paper Scissor",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676145429/smeou1s0pljujalydstk.png",
+            "tech": "HTML5, CSS3, JS",
+            "type": "Individual",
+            "hosted_link": "https://blog-client-imd3.onrender.com/"
+        }
+    ]
+}
