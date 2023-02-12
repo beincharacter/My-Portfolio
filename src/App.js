@@ -6,11 +6,13 @@ import Projects from './Screen/Projects/Projects';
 import Project from './Screen/Project/Project';
 import Games from './Screen/Games/Games';
 import Utilities from './Screen/Utilities/Utilities';
+import Header from './Componant/Header/Header';
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      {/* <Header /> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

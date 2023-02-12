@@ -1,0 +1,31 @@
+.home_container {
+    margin-left: 250px;
+  
+    .header {
+      width: 20%;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      gap: 10px;
+    }
+  
+    .projects {
+      width: 100%;
+      padding: 10px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        width: 100vw;
+        background-color: aqua;
+    }
+}

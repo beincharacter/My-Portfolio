@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #1f1f47;
+    /* background-image: url('https://studyinsweden.se/transformations/2018/04/rawpixel-com-561415-unsplash-scaled.jpg-1920x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    background-color: #121212;
     color: white;
 }
 

@@ -15,6 +15,7 @@ const Project_Card = () => {
             <> 
                 <div className="card-box"
                     key={`card_box${i}`} >
+                        
                     <span className='card' 
                         key={`card${i}`}
                         style={{

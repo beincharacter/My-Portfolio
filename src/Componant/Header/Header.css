@@ -7,17 +7,12 @@ header {
     padding: 1rem;
 }
 
-header > .name {
-    /* padding-right: calc(100vw - 570px); */
-}
 
  header > .nav_bar > ul {
     display: flex;
  }
 
  header > .nav_bar > ul > li {
-    /* display: flex; */
-    /* justify-content: space-between; */
     margin-right: 40px;
     cursor: pointer;
  }
@@ -26,10 +21,6 @@ header > .name {
     transform: scale(1.1);
  }
 
- header > .nav_bar {
-    /* display: flex; */
-    /* justify-content: end; */
-}
 
 @media only screen and (max-width: 450px) {
    body {
