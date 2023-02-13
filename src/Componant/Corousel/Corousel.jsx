@@ -1,33 +1,27 @@
 import React from 'react';
 import './Corousel.css';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Corousel = () => {
+const CarouselContainer = () => {
   return (
-    <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="http://res.cloudinary.com/doh91aq3h/image/upload/v1676108355/mzvkrladnvihyxvb2ghb.png" className="d-block w-100" alt=" " />
-            </div>
-            <div className="carousel-item">
-              <img src="http://res.cloudinary.com/doh91aq3h/image/upload/v1676107842/mihpqpytlbrej9iapsgj.png" className="d-block w-100" alt=" " />
-            </div>
-            <div className="carousel-item">
-              <img src="https://avatars.mds.yandex.net/i?id=73fd45bbecf1dbfd5b06b3e85925878e-6343405-images-thumbs&n=13&exp=1" className="d-block w-100" alt=" " />
-            </div>
-            <div className="carousel-item">
-              <img src="https://avatars.mds.yandex.net/i?id=73fd45bbecf1dbfd5b06b3e85925878e-6343405-images-thumbs&n=13&exp=1" className="d-block w-100" alt=" " />
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+    <>
+      <Carousel autoPlay>
+        <div>
+          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
+          {/* <p className="legend">Legend 1</p> */}
         </div>
+        <div>
+          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
+          {/* <p className="legend">Legend 2</p> */}
+        </div>
+        <div>
+          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
+      </Carousel>
+    </>
   )
 }
 
-export default Corousel
+export default CarouselContainer

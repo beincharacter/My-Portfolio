@@ -13,34 +13,33 @@ const Header = () => {
 
   return (
     <header className="header">
+      
+      <div className="header__name" onClick={() => navigate('/')}>Shubham Pal</div>
+      <div className={`header__nav ${isOpen ? 'header__nav--open' : ''}`}>
+          <span className="header__item" onClick={() => navigate('/')}>
+            <FaHome />
+            <span className="header__item-text">Home</span>
+          </span>
+          <span className="header__item" onClick={() => navigate('/about')}>
+            <FaUser />
+            <span className="header__item-text">About</span>
+          </span>
+          <span className="header__item" onClick={() => navigate('/projects')}>
+            <FaProjectDiagram />
+            <span className="header__item-text">Projects</span>
+          </span>
+          <span className="header__item" onClick={() => navigate('/games')}>
+            <FaGamepad />
+            <span className="header__item-text">Games</span>
+          </span>
+          <span className="header__item" onClick={() => navigate('/utilities')}>
+            <FaTools />
+            <span className="header__item-text">Utilities</span>
+          </span>
+      </div>
       <button className="header__hamburger" onClick={handleClick}>
         <FaBars />
       </button>
-      <div className="header__name">Shubham Pal</div>
-      <nav className={`header__nav ${isOpen ? 'header__nav--open' : ''}`}>
-        <ul className="header__list">
-          <li className="header__item" onClick={() => navigate('/')}>
-            <FaHome />
-            <span className="header__item-text">Home</span>
-          </li>
-          <li className="header__item" onClick={() => navigate('/about')}>
-            <FaUser />
-            <span className="header__item-text">About</span>
-          </li>
-          <li className="header__item" onClick={() => navigate('/projects')}>
-            <FaProjectDiagram />
-            <span className="header__item-text">Projects</span>
-          </li>
-          <li className="header__item" onClick={() => navigate('/games')}>
-            <FaGamepad />
-            <span className="header__item-text">Games</span>
-          </li>
-          <li className="header__item" onClick={() => navigate('/utilities')}>
-            <FaTools />
-            <span className="header__item-text">Utilities</span>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };

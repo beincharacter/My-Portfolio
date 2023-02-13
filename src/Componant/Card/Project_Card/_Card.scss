@@ -1,3 +1,13 @@
+p {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    color: yellow;
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +23,7 @@
 
         @media (max-width: 600px) {
             width: 100%;
+            margin: 1;
         }
 
         .card {
@@ -20,8 +31,6 @@
             position: relative;
             overflow: hidden;
             display: flex;
-            // align-items: flex-end;
-            // padding: 20px;
             transition: all 0.3s ease-in-out;
 
             &:hover {

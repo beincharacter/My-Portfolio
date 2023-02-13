@@ -9,7 +9,11 @@ const Project_Card = () => {
     const projects = pro.projects;
 
   return (
+
+    <>
+    <p>PROJECTS</p>
     <span className='cards-container'>
+        
         {projects.map((project, i) => {
             return (
             <> 
@@ -40,6 +44,7 @@ const Project_Card = () => {
             )
         })}
     </span>
+    </>
   )
 }
 
