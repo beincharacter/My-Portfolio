@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './about.scss';
 
 const Details = () => {
     return (
-        <div>
+        <div className='details__card'>
             <table style={{border: "1px solid black", bordeCollapse: "collapse"}}>
                 <tbody>
                     <tr>

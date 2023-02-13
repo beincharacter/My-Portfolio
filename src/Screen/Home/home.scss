@@ -1,13 +1,17 @@
 .home_container {
-    margin-left: 250px;
+    // margin-top: 12vh;
+
+    @media only screen and (max-width: 600px) {
+      margin: 10px;
+      margin-top: 17vh;
+    }
   
     .header {
       width: 20%;
     }
 
     .skills {
-      display: flex;
-      // flex-wrap: wrap;
+
       margin: 20px;
       gap: 10px;
     }
@@ -16,8 +20,13 @@
       width: 100%;
       padding: 10px;
       p {
-        margin: 0;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
       }
+
+      
     }
   }
   
