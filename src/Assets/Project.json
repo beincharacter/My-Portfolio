@@ -5,7 +5,7 @@
             "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png",
             "tech": "MERN Stack",
             "type": "Group",
-            "hosted_link": "https://blog-client-imd3.onrender.com/"
+            "hosted_link": "https://laundrycart-ui.onrender.com/"
         },
         {
             "name": "Bloging App",
@@ -36,11 +36,11 @@
             "hosted_link": "https://book-search-bqdv.onrender.com/"
         },
         {
-            "name": "QR Code",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676183813/bh0gqyuyimpjzpzwtkeg.png",
-            "tech": "Node Js",
+            "name": "Instaclone",
+            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676351358/rwf2s1uhvdmtcce9qoxn.png",
+            "tech": "MERN STACK",
             "type": "Individual",
-            "hosted_link": "https://book-search-bqdv.onrender.com/"
+            "hosted_link": "https://instaclone-react-tp2m.onrender.com/"
         }
     ]
 }

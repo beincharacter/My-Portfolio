@@ -8,17 +8,17 @@ const CarouselContainer = () => {
     <>
       <Carousel autoPlay>
         <div>
-          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
+          <img alt="" src="http://res.cloudinary.com/doh91aq3h/image/upload/v1676351644/nyzmmoghicqk5g5fdwci.jpg" />
           {/* <p className="legend">Legend 1</p> */}
         </div>
-        <div>
-          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
-          {/* <p className="legend">Legend 2</p> */}
+        {/* <div>
+          <img alt="" src="https://hdpic.club/uploads/posts/2022-08/thumbs/1660581386_6-hdpic-club-p-kayak-8.jpg" />
+          <p className="legend">Legend 2</p>
         </div>
         <div>
-          <img alt="" src="https://cdn.kimkim.com/files/a/images/7809628c0617a9900ba19d2a472b546ecba3db8f/big-7148f7bcbba908faf4014877e69bab2f.jpg" />
-          {/* <p className="legend">Legend 3</p> */}
-        </div>
+          <img alt="" src="https://hdpic.club/uploads/posts/2022-08/thumbs/1660581386_6-hdpic-club-p-kayak-8.jpg" />
+          <p className="legend">Legend 3</p>
+        </div> */}
       </Carousel>
     </>
   )
