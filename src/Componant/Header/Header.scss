@@ -12,6 +12,10 @@
 
     &__hamburger {
         display: none;
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: rgb(4, 4, 4);
+        color: white;
         width: 60px;
         height: 35px;
     }
@@ -54,14 +58,45 @@
 
     .header {
         height: 10vh;
-        
+
         &__hamburger {
             display: block;
             width: 50px;
         }
-    
+
         &__nav {
             display: none;
+        }
+
+        &__nav--open {
+            display: block;
+            z-index: 10;
+            background-color: #121212;
+            position: fixed;
+            right: 0px;
+            top: 10vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 70vw;
+            height: 100vh;
+
+
+            .header__item {
+                margin: 2rem 0;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(207, 181, 181, 0.339);
+                    border-radius: 6px;
+                    color: white;
+                }
+
+                .header__item-text {
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }

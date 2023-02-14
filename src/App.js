@@ -7,6 +7,7 @@ import Project from './Screen/Project/Project';
 import Games from './Screen/Games/Games';
 import Utilities from './Screen/Utilities/Utilities';
 import Header from './Componant/Header/Header';
+import Footer from './Footer/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/games' element={<Games />} />
           <Route path='/utilities' element={<Utilities />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
