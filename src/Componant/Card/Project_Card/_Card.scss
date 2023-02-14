@@ -12,11 +12,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 10px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
 
     .card-box {
         width: calc(33.33% - 20px);
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
         @media (max-width: 1024px) {
             width: calc(50% - 20px);
@@ -25,17 +28,18 @@ p {
         @media (max-width: 600px) {
             width: 100%;
             margin: 1;
+            background-color: lightgreen;
         }
 
         .card {
-            height: 300px;
+            height: 200px;
             position: relative;
             overflow: hidden;
             display: flex;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                transform: translateY(10px);
+                transform: translateY(5px);
 
                 .card_details {
                     display: flex;
@@ -43,13 +47,12 @@ p {
             }
 
             .card_details {
-                  display: none;
+                display: none;
                 justify-content: center;
                 flex-direction: column;
-                width: 100%;
                 height: 100%;
                 background-color: rgba(0, 0, 0, 0.6);
-                padding: 20px;
+                padding: 10px;
                 box-sizing: border-box;
 
                 &:hover {
@@ -60,9 +63,7 @@ p {
                 .tech-stack,
                 .tech-type,
                 .tech-host {
-                    margin-bottom: 10px;
-                    font-size: 19px;
-                    // color: black;
+                    font-size: 15px;
                     font-weight: bold;
                 }
 
@@ -77,8 +78,9 @@ p {
                     margin-top: 10px;
 
                     &:hover {
-                        background-color: #333;
-                        color: #fff;
+                        background-color: #76ec74;
+                        color: #000000;
+                        font-weight: bold;
                     }
                 }
             }

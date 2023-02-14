@@ -1,11 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaBars, FaHome, FaUser, FaProjectDiagram, FaGamepad, FaTools } from 'react-icons/fa';
+import { FaHome, FaUser, FaProjectDiagram, FaGamepad, FaTools } from 'react-icons/fa';
+import { GoThreeBars } from 'react-icons/go';
 import './Header.scss';
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const navigate = useNavigate();
+  console.log(isOpen)
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -38,7 +40,7 @@ const Header = () => {
           </span>
       </div>
       <button className="header__hamburger" onClick={handleClick}>
-        <FaBars />
+        <GoThreeBars size={22} />
       </button>
     </header>
   );
