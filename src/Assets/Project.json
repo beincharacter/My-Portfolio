@@ -2,45 +2,91 @@
     "projects": [
         {
             "name": "Laundry Cart",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png",
             "tech": "MERN Stack",
             "type": "Group",
-            "hosted_link": "https://laundrycart-ui.onrender.com/"
+            "hosted_link": "https://laundrycart-ui.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png"
+            }
         },
         {
             "name": "Bloging App",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941668/d4fxlmdv6xzwl4yfbi1g.png",
             "tech": "MERN Stack",
             "type": "Individual",
-            "hosted_link": "https://blog-client-imd3.onrender.com/"
+            "hosted_link": "https://blog-client-imd3.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941668/d4fxlmdv6xzwl4yfbi1g.png"
+            }
         },
         {
             "name": "Rock Paper Scissor",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676145429/smeou1s0pljujalydstk.png",
             "tech": "HTML5, CSS3, JS",
             "type": "Individual",
-            "hosted_link": "https://rock-paper-scissor-r2pn.onrender.com/"
+            "hosted_link": "https://rock-paper-scissor-r2pn.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676145429/smeou1s0pljujalydstk.png"
+            }
         },
         {
             "name": "Book Search App",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676149223/sxsebzp7weceygpseasv.png",
             "tech": "HTML5, CSS3, JS",
             "type": "Individual",
-            "hosted_link": "https://book-search-bqdv.onrender.com/"
+            "hosted_link": "https://book-search-bqdv.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676149223/sxsebzp7weceygpseasv.png"
+            }
         },
         {
             "name": "QR Code",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676183813/bh0gqyuyimpjzpzwtkeg.png",
             "tech": "Node Js",
             "type": "Individual",
-            "hosted_link": "https://book-search-bqdv.onrender.com/"
+            "hosted_link": "https://book-search-bqdv.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676183813/bh0gqyuyimpjzpzwtkeg.png"
+            }
+        },
+        {
+            "name": "Weather App",
+            "tech": "ReactJS",
+            "type": "Individual",
+            "hosted_link": "https://weatherapplication-7lbj.onrender.com/",
+            "images": {
+                "background": "https://res.cloudinary.com/doh91aq3h/image/upload/v1676720713/w.png.png"
+            },
+            "Project_details" : {
+                "title": "React Weather App",
+                "description": "A weather app built with React that allows users to view the current weather and forecast for a location. Users can search for locations and save their favorite locations for quick access.",
+                "technology_used": [
+                "OpenWeatherMap API",
+                "React",
+                "React Context API",
+                "react-router-dom"
+                ],
+                "features": [
+                "Used the OpenWeatherMap API to get weather data.",
+                "Display the current weather for the user's current location on the home screen.",
+                "Show a list of the user's favorite locations on the home screen for easy access. The list is stored locally on the device and persists across app sessions.",
+                "Search for locations by name, city, state, or country on the search button. The search results are displayed in a list.",
+                "View the current weather and forecast for a selected location on the detail screen.",
+                "Used a context provider for state management. e.g updating favourite city from seach or detail screen and updating that on favourite section in current city"
+                ],
+                "installation": [
+                "Install the dependencies using npm install.",
+                "Display the current weather for the user's current location on the home screen.",
+                "Run the app using npm start."
+                ],
+                "usage": "On the home screen, the app displays the current weather for the user's current location and a list of their favorite locations. To add a location to the favorite list, click the 'Add to favourite' button on the home screen and detail for the location. To view the weather for a location, type the city, state or country name in input field on search/home screen. The app displays the current weather and forecast for the location on can be seen on detail screen. by tapping 'see more'",
+                "link": "https://weatherapplication-7lbj.onrender.com/"
+                }
         },
         {
             "name": "Instaclone",
-            "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676351358/rwf2s1uhvdmtcce9qoxn.png",
             "tech": "MERN STACK",
             "type": "Individual",
-            "hosted_link": "https://instaclone-react-tp2m.onrender.com/"
+            "hosted_link": "https://instaclone-react-tp2m.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676351358/rwf2s1uhvdmtcce9qoxn.png"
+            }
         }
     ]
 }
