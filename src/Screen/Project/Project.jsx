@@ -1,33 +1,72 @@
 import React from 'react';
 import "./project.scss";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Project = () => {
-  const { state } = useLocation();
-  
+  const navigate = useNavigate();
+  const { state:
+    { Project_details } } = useLocation();
+    console.log(Project_details, " in project")
+
+    if(Project_details === undefined){ 
+      return navigate('/');
+    }
+
+  const {
+    title, image, technology_used, description, features, usage, link, installation
+  } = Project_details;
+
+
   return (
-    <div className="card-box"
-                    key={`card_box`} >
-                        
-                    <span className='card' 
-                        key={`card`}
-                        style={{
-                        backgroundImage: `url(${state.images.background})`,
-                        backgroundSize: 'cover',
-                        backgroundPositionX: 'center',
-                    }}>
+    <>
+      <div className="project-details">
+        <h3 className='title'>{title}</h3>
 
-                    <span className="card_details">
-                        <div className="tech-name">Peoject Name: {state.name}</div>
-                        <div className="tech-stack">Technologies Used: {state.tech}</div>
-                        <div className="tech-type">Type: {state.type}</div>
-                        <div className="tech-host">Hosted At: 
-                        <a style={{color: 'white', marginLeft: '5px'}} href={state.hosted_link} target='_blank' >Click here</a></div>
-                        
-                    </span>
-                    </span> 
+        <div className="box">
+          <div> <img src={image.image1} alt="project_photo" height="90%" width="85%" /> </div>
+          <div>
+            <span>
+              <span className='bold'>Description :</span>
+              <span>{description}</span>
+            </span></div>
+          <div>
+            <span>
+              <h2 className='bold'>Technology Used :</h2>
+              <ul>
+                {technology_used.map(tech => <li key={tech}>• {tech}</li>)}
+              </ul>
+            </span>
+          </div>
+          <div> <img src={image.image2} alt="project_photo" height="90%" width="85%" /> </div>
+        </div>
 
-                </div>
+        <div className="featues">
+          <span>
+            <h2 className='bold'>Features :</h2>
+            <ul>
+              {features.map(feature => <li key={feature}>• {feature}</li>)}
+            </ul>
+          </span>
+        </div>
+
+        <div className="featues">
+          <span>
+          <h2 className='bold'>Usage:</h2>
+          <p>{usage}</p>
+          </span>
+        </div>
+
+        <div className="link">
+          <h2 className='bold'>Hoisted at:</h2><a href={link} target="_blank">{link}</a>
+        </div>
+
+        
+        
+      </div>
+    </>
   )
 }
 

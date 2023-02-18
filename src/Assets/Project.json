@@ -16,7 +16,36 @@
             "hosted_link": "https://blog-client-imd3.onrender.com/",
             "images": {
                 "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941668/d4fxlmdv6xzwl4yfbi1g.png"
-            }
+            },
+            "Project_details": {
+                "title": "Blog App",
+                "description": "A blog application that allows users to register, create, view and read blogs.",
+                "image": {
+                  "image1": "https://res.cloudinary.com/doh91aq3h/image/upload/v1676720713/w.png.png",
+                  "image2": "https://res.cloudinary.com/doh91aq3h/image/upload/v1676748409/we.png.png"
+                },
+                "technology_used": [
+                  "React",
+                  "React-router-dom",
+                  "axios"
+                ],
+                "features": [
+                  "User authentication for Login and Register functionality.",
+                  "Mandatory input fields for email, password, and confirm password during registration.",
+                  "Mandatory input fields for email and password during login.",
+                  "Redirect to homepage after successful login.",
+                  "Homepage with Navbar and Body sections.",
+                  "Navbar with Logo, Home, Create, and Logout list items.",
+                  "Blogs section in the Body with Image, Title, Description, Author name, Date and Time when the blog was posted.",
+                  "Blog text should be truncated to 3 lines with a '...Read More' option to expand the blog content.",
+                  "Clicking 'Create' in the Navbar should take the user to a component to create a new blog with mandatory input fields for Title, image upload, paragraph and Save Post button.",
+                  "Option to upload an image from local computer or using an image link.",
+                  "Updated blog post should be displayed on the homepage.",
+                  "Prevent going back to the homepage after logging out."
+                ],
+                "usage": "To use the application, register with mandatory input fields for email, password, and confirm password. Login with mandatory input fields for email and password. After successful login, the user will be redirected to the homepage where they can view the existing blogs. Clicking on 'Create' in the Navbar will take the user to a component where they can create a new blog. The user can upload an image and fill out the mandatory input fields for Title and paragraph. Clicking 'Save Post' will update the blog on the homepage. To read a full blog, click '...Read More' or the blog text to expand it. Logging out will prevent going back to the homepage.",
+                "link": "https://blog-client-imd3.onrender.com/"
+              }
         },
         {
             "name": "Rock Paper Scissor",
@@ -25,7 +54,33 @@
             "hosted_link": "https://rock-paper-scissor-r2pn.onrender.com/",
             "images": {
                 "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1676145429/smeou1s0pljujalydstk.png"
-            }
+            },
+            "Project_details": {
+                "title": "Rock-Paper-Scissors Game",
+                "description": "A web-based game of rock-paper-scissors where users can play against the computer. Users can choose their move by clicking on the corresponding button, and the computer's move is generated randomly. The game keeps track of the score, and displays the winner of each round and the final winner of the game.",
+                "image": {
+                  "image1": "https://res.cloudinary.com/doh91aq3h/image/upload/v1676720713/rock-paper-scissors-game.png",
+                  "image2": "https://res.cloudinary.com/doh91aq3h/image/upload/v1676748409/rock-paper-scissors-game.png"
+                },
+                "technology_used": [
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "Node.js",
+                  "Express.js"
+                ],
+                "features": [
+                  "Users can play against the computer in a game of rock-paper-scissors.",
+                  "Users can choose their move by clicking on the corresponding button.",
+                  "The computer's move is generated randomly.",
+                  "The game keeps track of the score and displays the winner of each round and the final winner of the game.",
+                  "The game ends when one player reaches a predetermined score limit (e.g. first to 5 wins).",
+                  "The game can be reset to play again.",
+                  "The game has responsive design and can be played on desktop or mobile devices."
+                ],
+                "usage": "To play the game, open the app in a web browser. Click on the 'Rock', 'Paper', or 'Scissors' button to choose your move. The computer will generate its move and the winner of the round will be displayed. The score is kept track of at the top of the screen. The game ends when one player reaches a predetermined score limit (e.g. first to 5 wins). The game can be reset by clicking the 'Reset' button.",
+                "link": "https://rock-paper-scissor-r2pn.onrender.com/"
+              }
         },
         {
             "name": "Book Search App",
@@ -56,11 +111,16 @@
             "Project_details" : {
                 "title": "React Weather App",
                 "description": "A weather app built with React that allows users to view the current weather and forecast for a location. Users can search for locations and save their favorite locations for quick access.",
+                "image": {
+                    "image1" : "https://res.cloudinary.com/doh91aq3h/image/upload/v1676720713/w.png.png",
+                    "image2" : "https://res.cloudinary.com/doh91aq3h/image/upload/v1676748409/we.png.png"
+                },
                 "technology_used": [
                 "OpenWeatherMap API",
                 "React",
                 "React Context API",
-                "react-router-dom"
+                "React-router-dom",
+                "axios"
                 ],
                 "features": [
                 "Used the OpenWeatherMap API to get weather data.",
@@ -70,14 +130,9 @@
                 "View the current weather and forecast for a selected location on the detail screen.",
                 "Used a context provider for state management. e.g updating favourite city from seach or detail screen and updating that on favourite section in current city"
                 ],
-                "installation": [
-                "Install the dependencies using npm install.",
-                "Display the current weather for the user's current location on the home screen.",
-                "Run the app using npm start."
-                ],
                 "usage": "On the home screen, the app displays the current weather for the user's current location and a list of their favorite locations. To add a location to the favorite list, click the 'Add to favourite' button on the home screen and detail for the location. To view the weather for a location, type the city, state or country name in input field on search/home screen. The app displays the current weather and forecast for the location on can be seen on detail screen. by tapping 'see more'",
                 "link": "https://weatherapplication-7lbj.onrender.com/"
-                }
+            }
         },
         {
             "name": "Instaclone",
