@@ -9,37 +9,42 @@ const Header = () => {
   const navigate = useNavigate();
   console.log(isOpen)
 
-  const handleClick = () => {
+  const handleClick = (route) => {
+    navigate(route)
     setIsOpen(!isOpen);
   };
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <header className="header">
       
       <div className="header__name" onClick={() => navigate('/')}>Shubham Pal</div>
       <div className={`header__nav ${isOpen ? 'header__nav--open' : ''}`}>
-          <span className="header__item" onClick={() => navigate('/')}>
+          <span className="header__item" onClick={() => handleClick('/')}>
             <FaHome />
-            <span className="header__item-text">Home</span>
+            <span className="header__item-text" >Home</span>
           </span>
-          <span className="header__item" onClick={() => navigate('/about')}>
+          <span className="header__item" onClick={() => handleClick("/about")}>
             <FaUser />
-            <span className="header__item-text">About</span>
+            <span className="header__item-text" >About</span>
           </span>
-          <span className="header__item" onClick={() => navigate('/projects')}>
+          <span className="header__item" onClick={() => handleClick('/projects')}>
             <FaProjectDiagram />
-            <span className="header__item-text">Projects</span>
+            <span className="header__item-text" >Projects</span>
           </span>
-          <span className="header__item" onClick={() => navigate('/games')}>
+          <span className="header__item" onClick={() => handleClick('/games')}>
             <FaGamepad />
-            <span className="header__item-text">Games</span>
+            <span className="header__item-text" >Games</span>
           </span>
-          <span className="header__item" onClick={() => navigate('/utilities')}>
+          <span className="header__item" onClick={() => handleClick('/utilities')}>
             <FaTools />
-            <span className="header__item-text">Utilities</span>
+            <span className="header__item-text" >Utilities</span>
           </span>
       </div>
-      <button className="header__hamburger" onClick={handleClick}>
+      <button className="header__hamburger" onClick={handleOpen}>
         <GoThreeBars size={22} />
       </button>
     </header>
