@@ -7,6 +7,7 @@ import './_Card.scss';
 const Project_Card = () => {
     const navigate = useNavigate();
     const projects = pro.projects;
+    console.log(projects)
 
   return (
 
@@ -15,6 +16,8 @@ const Project_Card = () => {
     <span className='cards-container'>
         
         {projects.map((project, i) => {
+            {
+                console.log(project.images.login)}
             return (
             <> 
                 <div className="card-box"
@@ -23,7 +26,7 @@ const Project_Card = () => {
                     <span className='card' 
                         key={`card${i}`}
                         style={{
-                        backgroundImage: `url(${project.background})`,
+                        backgroundImage: `url(${project.images.background})`,
                         backgroundSize: 'cover',
                         backgroundPositionX: 'center',
                     }}>
@@ -34,7 +37,9 @@ const Project_Card = () => {
                         <div className="tech-type">Type: {project.type}</div>
                         <div className="tech-host">Hosted At: 
                         <a style={{color: 'white', marginLeft: '5px'}} href={project.hosted_link} target='_blank' >Click here</a></div>
-                        <button onClick={() => navigate('/project')}>Know more</button>
+                        <button onClick={() => navigate('/project', {
+                            state: project
+                        })}>Know more</button>
                     </span>
                     </span> 
 

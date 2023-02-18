@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
-import{ SiGmail } from 'react-icons/si'
+import{ SiGmail } from 'react-icons/si';
 
 
 const Footer = () => {

@@ -1,33 +1,17 @@
 .home_container {
 
-    .header {
-      width: 20%;
+    &_projects {
+        height: 490px;
+        overflow: hidden;
+
+        @media only screen and (max-width: 1024px) {
+            height: 710px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            height: 1370px;
+        }
     }
 
-    .skills {
-      margin: 20px;
-      gap: 10px;
-    }
-  
-    .projects {
-      width: 100%;
 
-      p {
-        margin: 10px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      
-    }
-  }
-  
-
-@media only screen and (max-width: 600px) {
-
-    body {
-        width: 100vw;
-        background-color: aqua;
-    }
 }

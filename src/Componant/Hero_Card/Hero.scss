@@ -1,0 +1,22 @@
+.hero_box {
+    margin: 0 0 3rem 0;
+    
+    .hero_card {
+        margin: 5px;
+        padding: 5px;
+        
+        * {
+            font-family: sans-serif;
+            font-size: 1.85rem;
+            line-height: 2.25rem;
+        }
+    }
+
+    .icons { 
+
+        a{
+            margin: 1rem;
+        }
+        margin: 10px;
+    }
+}
