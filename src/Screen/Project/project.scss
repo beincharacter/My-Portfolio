@@ -41,6 +41,8 @@
 
             img {
                 border-radius: 8px;
+                height: 90%;
+                width: 90%;
             }
         }
     }
@@ -92,8 +94,61 @@
 
     a {
         color: #0072C6;
-        text-decoration: underline;
+        text-decoration: none;
         margin-left: 10px;
         font-size: 20px;
+    }
+
+
+    /* media*/
+
+    @media only screen and (max-width: 650px) {
+
+        margin: 10px;
+
+        * {
+            font-size: 16px;
+        }
+        
+
+    .title {
+        font-size: 16px;
+    }
+
+    * {
+        outline: 1px solid red;
+    }
+    
+    .bold {
+        font-weight: bolder;
+        font-size: 16px;
+        margin-right: 6px;
+        color: yellow;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .box {
+
+        div{
+            padding: 10px;
+            height: auto;
+            min-width: auto;
+            width: 100%;
+
+            img {
+                border-radius: 8px;
+                height: 70%;
+            }
+        }
+    }
+
+    a {
+        color: #0072C6;
+        margin-left: 10px;
+        font-size: 16px;
+    }
     }
 }
