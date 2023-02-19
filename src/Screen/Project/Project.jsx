@@ -1,9 +1,6 @@
 import React from 'react';
 import "./project.scss";
 import { useLocation, useNavigate } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const Project = () => {
   const navigate = useNavigate();
@@ -16,7 +13,7 @@ const Project = () => {
     }
 
   const {
-    title, image, technology_used, description, features, usage, link, installation
+    title, image, technology_used, description, features, usage, link
   } = Project_details;
 
 
@@ -26,7 +23,7 @@ const Project = () => {
         <h3 className='title'>{title}</h3>
 
         <div className="box">
-          <div> <img src={image.image1} alt="project_photo" height="90%" width="85%" /> </div>
+          <div> <img src={image.image1} alt="project_photo" /> </div>
           <div>
             <span>
               <span className='bold'>Description :</span>
