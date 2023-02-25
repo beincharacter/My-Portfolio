@@ -53,4 +53,4 @@ const Project_Card = () => {
   )
 }
 
-export default Project_Card;
+export default React.memo(Project_Card);

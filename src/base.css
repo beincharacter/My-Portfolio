@@ -6,6 +6,15 @@
     list-style: none;
 }
 
+*:focus {
+    outline: none;
+}
+
+textarea {
+    padding: 7px;
+}
+
+
 body {
     /* background-image: url('https://studyinsweden.se/transformations/2018/04/rawpixel-com-561415-unsplash-scaled.jpg-1920x.jpg');
     background-size: cover;
@@ -17,4 +26,16 @@ body {
 
 body::-webkit-scrollbar {
     width: 0px;
+}
+
+input {
+    padding-left: 7px;
+    background-color: transparent;
+    border: 1px solid rgb(240, 225, 225);
+    color: white;
+    margin-left: 3px;
+}
+
+input:focus {
+    outline: none;
 }
