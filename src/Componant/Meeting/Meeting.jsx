@@ -16,11 +16,12 @@ const Meeting = () => {
 
   const handleSend = async (e) => {
     e.preventDefault();
+    setMsgDisplay(!msgDisplay)
 
     const time = selectedDateTime.toLocaleDateString() + " " + selectedDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
 
     try {
-      const response = await fetch("http://localhost:3001/send-email", {
+      const response = await fetch("https://mailtoshubham.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
