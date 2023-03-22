@@ -1,15 +1,6 @@
 {
     "projects": [
         {
-            "name": "Laundry Cart",
-            "tech": "MERN Stack",
-            "type": "Group",
-            "hosted_link": "https://laundrycart-ui.onrender.com/",
-            "images": {
-                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png"
-            }
-        },
-        {
             "name": "Bloging App",
             "tech": "MERN Stack",
             "type": "Individual",
@@ -46,6 +37,15 @@
                 "usage": "To use the application, register with mandatory input fields for email, password, and confirm password. Login with mandatory input fields for email and password. After successful login, the user will be redirected to the homepage where they can view the existing blogs. Clicking on 'Create' in the Navbar will take the user to a component where they can create a new blog. The user can upload an image and fill out the mandatory input fields for Title and paragraph. Clicking 'Save Post' will update the blog on the homepage. To read a full blog, click '...Read More' or the blog text to expand it. Logging out will prevent going back to the homepage.",
                 "link": "https://blog-client-imd3.onrender.com/"
               }
+        },
+        {
+            "name": "Laundry Cart",
+            "tech": "MERN Stack",
+            "type": "Group",
+            "hosted_link": "https://laundrycart-ui.onrender.com/",
+            "images": {
+                "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941047/anx5ddhmpziz220i6blq.png"
+            }
         },
         {
             "name": "Rock Paper Scissor",
