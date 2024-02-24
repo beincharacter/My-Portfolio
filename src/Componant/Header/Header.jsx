@@ -1,53 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaHome, FaUser, FaProjectDiagram, FaGamepad, FaTools } from 'react-icons/fa';
 import { GoThreeBars } from 'react-icons/go';
+import classNames from 'classnames';
 import './Header.scss';
 
+const HeaderItem = ({ icon, text, onClick }) => (
+  <span className="header__item" onClick={onClick}>
+    {icon}
+    <span className="header__item-text">{text}</span>
+  </span>
+);
+
 const Header = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-  console.log(isOpen)
 
   const handleClick = (route) => {
-    navigate(route)
+    navigate(route);
     setIsOpen(!isOpen);
   };
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
-  }
+  };
+
+  const headerNavClasses = classNames('header__nav', {
+    'header__nav--open': isOpen,
+  });
 
   return (
-    <header className="header">
-      
-      <div className="header__name" onClick={() => navigate('/')}>Shubham Pal</div>
-      <div className={`header__nav ${isOpen ? 'header__nav--open' : ''}`}>
-          <span className="header__item" onClick={() => handleClick('/')}>
-            <FaHome />
-            <span className="header__item-text" >Home</span>
-          </span>
-          <span className="header__item" onClick={() => handleClick("/about")}>
-            <FaUser />
-            <span className="header__item-text" >About</span>
-          </span>
-          <span className="header__item" onClick={() => handleClick('/projects')}>
-            <FaProjectDiagram />
-            <span className="header__item-text" >Projects</span>
-          </span>
-          <span className="header__item" onClick={() => handleClick('/games')}>
-            <FaGamepad />
-            <span className="header__item-text" >Games</span>
-          </span>
-          <span className="header__item" onClick={() => handleClick('/utilities')}>
-            <FaTools />
-            <span className="header__item-text" >Utilities</span>
-          </span>
-      </div>
-      <button className="header__hamburger" onClick={handleOpen}>
-        <GoThreeBars size={22} />
-      </button>
-    </header>
+    <div className="header_box">
+      <header className="header">
+        <div className="header__name" onClick={() => navigate('/')}>
+          Shubham Pal
+        </div>
+        <div className={headerNavClasses}>
+          <HeaderItem icon={<FaHome />} text="Home" onClick={() => handleClick('/')} />
+          <HeaderItem icon={<FaUser />} text="About" onClick={() => handleClick('/about')} />
+          <HeaderItem icon={<FaProjectDiagram />} text="Projects" onClick={() => handleClick('/projects')} />
+          <HeaderItem icon={<FaGamepad />} text="Games" onClick={() => handleClick('/games')} />
+          <HeaderItem icon={<FaTools />} text="Utilities" onClick={() => handleClick('/utilities')} />
+        </div>
+        <button className="header__hamburger" onClick={handleOpen}>
+          <GoThreeBars size={22} />
+        </button>
+      </header>
+    </div>
   );
 };
 

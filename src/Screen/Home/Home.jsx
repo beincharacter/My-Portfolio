@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
     <div className='home_container'>
-        {/* <HeroCard /> */}
-        <CarouselContainer />
+        <HeroCard />
+        {/* <CarouselContainer /> */}
         <div className="home_container_projects">
         <Project_Card />
         </div>

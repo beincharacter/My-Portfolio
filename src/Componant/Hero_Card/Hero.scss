@@ -1,22 +1,91 @@
-.hero_box {
-    margin: 0 0 3rem 0;
-    
-    .hero_card {
-        margin: 5px;
-        padding: 5px;
+.hero_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.1s ease, transform 0.6s ease-in;
+
+    &.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .about_box {
+        margin: 0 0 3rem 0;
+        // border: 1px solid red;
+        height: 650px;
+        width: 50%;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        align-items: center;
         
-        * {
-            font-family: sans-serif;
-            font-size: 1.85rem;
-            line-height: 2.25rem;
+        .hero_card {
+            margin: 15px;
+            padding: 15px;
+            width: 60%;
+            // border: 1px solid red;
+            border-left: 1px solid gray;
+            
+            * {
+                font-family: sans-serif;
+                font-size: 1.85rem;
+                line-height: 2.25rem;
+            }
+        }
+    
+        .icons { 
+    
+            a{
+                margin: 1rem;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            // margin: 10px;
         }
     }
 
-    .icons { 
 
-        a{
-            margin: 1rem;
+
+    .skills_box {
+        margin: 0 0 3rem 0;
+        // border: 1px solid red;
+        height: 650px;
+        width: 50%;
+        display: flex;
+        // flex-direction: column  ;
+        // justify-content: center;
+        // align-items: center;
+        // background-color: bisque;
+        
+        .hero_card {
+            margin: 15px;
+            padding: 15px;
+            width: 100%;
+            // border: 1px solid red;
+            border-left: 1px solid gray;
+            
+            * {
+                font-family: sans-serif;
+                font-size: 1.85rem;
+                line-height: 2.25rem;
+            }
         }
-        margin: 10px;
+    
+        .icons { 
+    
+            a{
+                margin: 1rem;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            // margin: 10px;
+        }
     }
 }

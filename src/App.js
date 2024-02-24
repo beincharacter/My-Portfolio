@@ -16,7 +16,7 @@ const App = () => {
     <div>
       <BrowserRouter>
       <Header />
-      {/* <div className='main_app_container'> */}
+      <div className='main_app_container'>
 
         <Routes>
           
@@ -31,7 +31,7 @@ const App = () => {
 
         <Meeting />
         <Footer />
-      {/* </div> */}
+      </div>
       </BrowserRouter>
     </div>
   )

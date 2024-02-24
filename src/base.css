@@ -10,6 +10,11 @@
     outline: none;
 }
 
+.main_app_container {
+    margin-top: 120px;
+    
+}
+
 textarea {
     padding: 7px;
 }
@@ -21,7 +26,9 @@ body {
     background-position: center;
     background-attachment: fixed; */
     background-color: #121212;
-    color: white;
+    color: white; background: rgb(0,0,0);
+    background: rgb(23,22,21);
+    background: linear-gradient(128deg, rgba(23,22,21,1) 50%, rgba(7,7,90,1) 100%, rgba(0,0,0,1) 100%, rgba(9,9,121,1) 100%, rgba(6,82,169,1) 100%, rgba(0,212,255,1) 100%); 
 }
 
 body::-webkit-scrollbar {
