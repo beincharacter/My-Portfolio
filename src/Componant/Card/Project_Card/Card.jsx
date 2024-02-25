@@ -4,7 +4,7 @@ import projectsData from '../../../Assets/Project.json';
 import './ProjectCard.scss';
 import ScrollReveal from 'scrollreveal';
 
-const ProjectCard = ({ project, isVisible }) => {
+const ProjectCard = ({ project }) => {
     const navigate = useNavigate();
 
     const handleLiveDemoClick = (projectLink) => {
@@ -17,14 +17,19 @@ const ProjectCard = ({ project, isVisible }) => {
     useEffect(() => {
         ScrollReveal().reveal('.reveal', {
           delay:  500,
+          duration: 1000,
           distance: '200px',
-          origin: 'bottom'
-        });
-      }, []);
+          origin: 'bottom',
+          reset: true,
+          easing: 'ease-in',
+        //   interval: 600,
+          scale: 0.85
+        }, []);
+    });
     
 
     return (
-        <div className="project-card">
+        <div className="project-card reveal">
             <div className="view-box">
                 <img src={project.images.background} alt={project.name} />
             </div>
@@ -43,18 +48,13 @@ const ProjectCard = ({ project, isVisible }) => {
 
 const ProjectCardContainer = () => {
     const projects = projectsData.projects;
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        setIsVisible(true);
-    }, []);
 
     return (
         <>
             <p>PROJECTS</p>
-            <div className="project-card-container reveal">
+            <div className="project-card-container">
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} project={project} isVisible={isVisible} />
+                    <ProjectCard key={index} project={project} />
                 ))}
             </div>
         </>

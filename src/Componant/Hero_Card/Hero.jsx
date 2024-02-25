@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.scss';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaMedium } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import Skills_Card from '../Card/Skill_Card/Skills';
 
@@ -9,7 +9,7 @@ const HeroCard = () => {
     { icon: <FaGithub size={30} />, url: 'https://github.com/beincharacter', title: 'GitHub' },
     { icon: <FaLinkedin size={30} />, url: 'https://www.linkedin.com/in/pal-shubham', title: 'LinkedIn' },
     { icon: <FaTwitter size={30} />, url: 'https://twitter.com/beincharacter', title: 'Twitter' },
-    { icon: <FaInstagram size={30} />, url: 'https://www.instagram.com/beincharacter/', title: 'Instagram' },
+    { icon: <FaMedium size={30} />, url: 'https://www.instagram.com/beincharacter/', title: 'Instagram' },
     { icon: <SiGmail size={30} />, url: 'mailto:shubhampalatwork@gmail.com', title: 'Gmail' }
   ];
 
