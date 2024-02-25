@@ -1,0 +1,52 @@
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    // border: 1px solid red;
+    gap: 10px; // Add gap between project cards
+    overflow: scroll;
+
+    .project-card {
+        display: flex;
+        height: 200px;
+        width: calc(50% - 10px); // Adjust width to accommodate gap
+
+        .view-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+
+            img {
+                max-width: 100%; // Ensure image does not exceed container width
+                max-height: 100%; // Ensure image does not exceed container height
+                border-radius: 5px;
+            }
+        }
+
+        .details-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10px; 
+            width: 50%;
+
+            .btns {
+                display: flex;
+                // justify-content: space-between;
+                margin-top: 10px; // Add margin between buttons and other details
+
+                button {
+                    border: none;
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                    width: 100px;
+                    background-color: burlywood;
+                    margin-left: 10px;
+                    cursor: pointer; // Add cursor pointer to buttons
+                }
+            }
+        }
+    }
+}
+

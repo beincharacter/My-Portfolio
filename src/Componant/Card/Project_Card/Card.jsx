@@ -1,56 +1,64 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import pro from '../../../Assets/Project.json';
-import './_Card.scss';
+import projectsData from '../../../Assets/Project.json';
+import './ProjectCard.scss';
+import ScrollReveal from 'scrollreveal';
 
-
-const Project_Card = () => {
+const ProjectCard = ({ project, isVisible }) => {
     const navigate = useNavigate();
-    const projects = pro.projects;
-    console.log(projects)
 
-  return (
+    const handleLiveDemoClick = (projectLink) => {
+        window.open(projectLink, '_blank');
+    };
 
-    <>
-    <p>PROJECTS</p>
-    <span className='cards-container'>
-        
-        {projects.map((project, i) => {
-            {
-                console.log(project.images.login)}
-            return (
-            <> 
-                <div className="card-box"
-                    key={`card_box${i}`} >
-                        
-                    <span className='card' 
-                        key={`card${i}`}
-                        style={{
-                        backgroundImage: `url(${project.images.background})`,
-                        backgroundSize: 'cover',
-                        backgroundPositionX: 'center',
-                    }}>
+    const handleGithubClick = (githubLink) => {
+        window.open(githubLink, '_blank');
+    };
+    useEffect(() => {
+        ScrollReveal().reveal('.reveal', {
+          delay:  500,
+          distance: '200px',
+          origin: 'bottom'
+        });
+      }, []);
+    
 
-                    <span className="card_details">
-                        <div className="tech-name">Project Name: {project.name}</div>
-                        <div className="tech-stack">Technologies Used: {project.tech}</div>
-                        <div className="tech-type">Type: {project.type}</div>
-                        <div className="tech-host">Hosted At: 
-                        <a style={{color: 'white', marginLeft: '5px'}} href={project.hosted_link} target='_blank' >Click here</a></div>
-                        <button onClick={() => navigate('/project', {
-                            state: project
-                        })}>Know more</button>
-                    </span>
-                    </span> 
-
+    return (
+        <div className="project-card">
+            <div className="view-box">
+                <img src={project.images.background} alt={project.name} />
+            </div>
+            <div className="details-box">
+                <h3>{project.name}</h3>
+                <p>Tech : {project.tech}</p>
+                <p>Type : {project.type}</p>
+                <div className="btns">
+                    <button onClick={() => handleLiveDemoClick(project.hosted_link)}>Live Demo</button>
+                    <button onClick={() => handleGithubClick(project.github['front-end'])}>Github</button>
                 </div>
+            </div>
+        </div>
+    );
+};
 
-            </>
-            )
-        })}
-    </span>
-    </>
-  )
-}
+const ProjectCardContainer = () => {
+    const projects = projectsData.projects;
+    const [isVisible, setIsVisible] = useState(false);
 
-export default React.memo(Project_Card);
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
+    return (
+        <>
+            <p>PROJECTS</p>
+            <div className="project-card-container reveal">
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} project={project} isVisible={isVisible} />
+                ))}
+            </div>
+        </>
+    );
+};
+
+export default React.memo(ProjectCardContainer);

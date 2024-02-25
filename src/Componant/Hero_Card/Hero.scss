@@ -6,6 +6,8 @@
     opacity: 0;
     transform: translateY(200px);
     transition: opacity 0.1s ease, transform 0.6s ease-in;
+    height: 100vh;
+    
 
     &.animate {
         opacity: 1;

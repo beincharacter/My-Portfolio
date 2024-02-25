@@ -2,11 +2,15 @@
     "projects": [
         {
             "name": "Bloging App",
-            "tech": "MERN Stack",
+            "tech": "MERN Stack, Jwt, bcrypt, react-router-dom, cloudinary",
             "type": "Individual",
             "hosted_link": "https://blog-client-imd3.onrender.com/",
             "images": {
                 "background": "http://res.cloudinary.com/doh91aq3h/image/upload/v1675941668/d4fxlmdv6xzwl4yfbi1g.png"
+            },
+            "github": {
+                "front-end" : "https://github.com/beincharacter/blog-client",
+                "back-end" : "https://github.com/beincharacter/Blog-Server"
             },
             "Project_details": {
                 "title": "Blog App",
@@ -40,7 +44,7 @@
         },
         {
             "name": "Laundry Cart",
-            "tech": "MERN Stack",
+            "tech": "MERN Stack. Jwt, bcrypt, react-router-dom",
             "type": "Group",
             "hosted_link": "https://laundrycart-ui.onrender.com/",
             "images": {
@@ -136,7 +140,7 @@
         },
         {
             "name": "Instaclone",
-            "tech": "MERN STACK",
+            "tech": "MERN Stack, Jwt, bcrypt, cloudinary",
             "type": "Individual",
             "hosted_link": "https://instaclone-react-tp2m.onrender.com/",
             "images": {
