@@ -1,17 +1,16 @@
-// .home_container {
+.home_container {
+    .hero_container {
+        display: flex;
+        
+        .about_box {
+            display: flex;
+        }
+    }
 
-//     &_projects {
-//         height: 490px;
-//         overflow: hidden;
+    .contact-form {
+        margin: 10px 0;
+        // border: 1px solid red;
+        background-color: rgba(36, 37, 37, 0.226);
+    }
 
-//         @media only screen and (max-width: 1024px) {
-//             height: 710px;
-//         }
-
-//         @media only screen and (max-width: 600px) {
-//             height: 1370px;
-//         }
-//     }
-
-
-// }
+}

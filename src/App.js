@@ -1,5 +1,5 @@
 import React from 'react';
-// import './app.css';
+import './app.scss';
 import Home from './Screen/Home/Home';
 import About from './Screen/About/About';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -13,7 +13,7 @@ import Meeting from './Componant/Meeting/Meeting';
 
 const App = () => {
   return (
-    <div>
+    <div id='main'>
       <BrowserRouter>
       <Header />
       <div className='main_app_container'>
@@ -29,7 +29,7 @@ const App = () => {
         </Routes>
 
 
-        <Meeting />
+        {/* <Meeting /> */}
         <Footer />
       </div>
       </BrowserRouter>

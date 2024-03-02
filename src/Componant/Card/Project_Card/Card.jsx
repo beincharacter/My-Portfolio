@@ -16,14 +16,14 @@ const ProjectCard = ({ project }) => {
     };
     useEffect(() => {
         ScrollReveal().reveal('.reveal', {
-          delay:  500,
-          duration: 1000,
-          distance: '200px',
+          delay:  200,
+          duration: 500,
+          distance: '400px',
           origin: 'bottom',
-          reset: true,
-          easing: 'ease-in',
+        //   reset: true,
+          easing: 'linear',
         //   interval: 600,
-          scale: 0.85
+        //   scale: 0.85
         }, []);
     });
     
